@@ -118,6 +118,9 @@ header li a:hover {
     header div {
       margin-left: 1.5rem;
     }
+    header {
+      border-bottom: 2px solid transparent;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -129,7 +132,7 @@ header li a:hover {
       margin-right: 1rem;
     }
     header {
-      border-bottom: 2px solid transparent;
+      border-bottom: 1px solid transparent;
     }
 }
 
@@ -138,8 +141,7 @@ header li a:hover {
 .banner {
   display:inline-flex;
   justify-content: space-between;
-  background-color:rgb(255, 255, 255);
-  flex-basis: 30rem;;
+  flex-basis: 30rem;
   margin-top: 2rem;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
@@ -204,6 +206,12 @@ header li a:hover {
   }
 }
 
+@media only screen and (max-width: 860px) {
+  header {
+    border-bottom: 2px solid transparent;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .banner {
     flex-direction: column;
@@ -223,8 +231,8 @@ header li a:hover {
 
   .banner {
     margin-top: 1rem;
-    border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
   }
 
   .banner article {
@@ -275,11 +283,20 @@ header li a:hover {
     0 0 6rem 6rem #0ff;
 }
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 860px) {
 
   .background {
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .background {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
   }
 }
 
