@@ -200,6 +200,10 @@ header li a:hover {
   .banner article {
     flex-basis:auto;
   }
+
+  .banner .image {
+    background-position: 50% 20%;;
+  }
 }
 
 @media only screen and (max-width: 650px) {
