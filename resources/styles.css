@@ -1,0 +1,349 @@
+body {
+    background-color: #fffbff;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+}
+
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+span.nobr { 
+  white-space: nowrap; 
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/*header*/
+
+header {
+  display: flex;
+  background-color: rgba(36, 43, 97, 1);
+  background-image: linear-gradient(90deg, rgb(44,55,64) 0%, rgb(0,29,51) 100%);
+  justify-content: space-between;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, rgb(0, 255, 255), rgb(138, 110, 176), rgb(255, 94, 94)) 90;
+}
+
+header div {
+  height: 8rem;
+  width: 20rem;
+  padding: 1.5rem;
+  margin-left: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-image: url(images/logoFwPnastrone.png);
+  z-index: 10;
+}
+
+header ul {
+  flex-shrink: 1;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25vw 1vw 0.75vw 1vw;
+  flex-wrap: wrap;
+}
+
+header li {
+  flex-shrink: 3;
+  margin-bottom: 0.5vw;
+  letter-spacing: 0.05vw;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 2vw;
+}
+
+header li a {
+  color: rgb(98, 162, 212);
+  transition: color 0.5s ease-in-out;
+}  
+header li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1000px) {
+  header li {
+    font-size: 1.9vw;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+    header ul {
+      justify-content: flex-end;
+    }
+    header li {
+      font-size: 1.1rem;
+    }
+    header div {
+      margin-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header li {
+      font-size: 1rem;
+    }
+    header div {
+      margin-left: 0.5rem;
+    }
+}
+
+/*glowing*/
+
+.background {
+  background-color:rgb(0,29,51);
+  padding: 4rem;
+  margin-top: 2rem;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, rgb(0, 255, 255), rgb(138, 110, 176), rgb(255, 94, 94)) 90;
+}
+/*.glowing {
+  margin: auto auto;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+  border: solid 3px rgba(255, 221, 251, 0.445);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}*/
+
+.lamp {
+  margin: 7rem auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 3.5rem 2rem rgb(255, 94, 94),
+    0 0 6rem 6rem rgb(170, 110, 255),
+    0 0 6rem 6rem #0ff;
+}
+
+/*works*/
+
+.works {
+  display: grid;
+  grid-template-areas: "A B C"
+                      "D E F";
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #e6f1fc;
+}
+
+.works>div {
+  background-color: white;
+  padding: 1.5rem;
+  color: #0a41a8d0;
+  transition: transform 1.8s 0.1s;
+}
+
+.works .image {
+  height: 15rem;
+  width: auto;
+  margin-bottom: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 1.8s;
+}
+
+.works h2 {
+  transition: transform 1.8s;
+}
+
+.w1 .image {
+  background-image: url(images/paintings.jpg);
+}
+
+.w2 .image {
+  background-image: url(images/pastel.JPG);
+}
+
+.w3 .image {
+  background-image: url(images/drawings.jpg);
+}
+
+.w4 .image {
+  background-image: url(images/poster.jpg);
+}
+
+.w5 .image {
+  background-image: url(images/web_design.png);
+}
+
+.w6 .image {
+  background-image: url(images/logo.png);
+}
+
+@media only screen and (max-width: 800px) {
+  .works {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .works {
+    grid-template: repeat(6, 1fr)/ 1fr;
+  }
+}
+
+/*nav*/
+
+nav {
+  text-align: left;
+  margin: 1rem 2vw;
+}
+
+nav a {
+  color: rgb(50, 76, 163);
+}
+
+nav a:hover {
+  color: rgb(124, 69, 108);
+}
+
+/*about me*/
+
+.about-me {
+  background-image: url(images/me.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vw;
+  margin: 1rem auto 2rem;
+}
+
+.about-me p {
+  background-color: #e6f1fc9d;
+  padding: 1rem 2vw;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 650px) {
+  .about-me {
+    margin: 1rem auto 1rem;
+  }
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(36, 43, 97, 1);
+  background-image: linear-gradient(90deg, rgba(36, 43, 97, 1) 0%, rgba(107, 77, 102, 1) 50%, rgba(99, 156, 187, 1) 100%);
+  color:white;
+  padding: 1vw 2vw;
+  line-height: 1.5vw;
+  text-align: left;
+  font-size: 1vw;
+}
+
+footer h3 {
+  font-size: 1.2vw;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color:black;
+}
+
+footer .right {
+  text-align: right;
+}
+
+@media only screen and (max-width: 1267px) {
+  footer {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    padding: 2vw 2vw;
+  }
+
+  footer h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+    footer {
+      font-size: 1.7vw;
+      line-height: 2.2vw;
+      padding: 2vw 2vw;
+    }
+  
+    footer h3 {
+      font-size: 2.2vw;
+    }
+  }
+
+@media only screen and (max-width: 650px) {
+    footer {
+      flex-direction: column;
+      font-size: 0.8rem;
+      padding: 1rem 2rem;
+      line-height: 1.2rem;
+    }
+
+    footer section {
+      margin: 1rem 0;
+    }
+
+    footer h3 {
+      font-size: 1.1rem;
+    }
+
+    footer a:hover {
+      color:rgb(157, 211, 255)
+    }
+
+    footer .right {
+      text-align: left;
+    }
+  }
+
+
