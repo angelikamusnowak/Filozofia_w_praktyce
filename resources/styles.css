@@ -4,10 +4,12 @@ body {
     text-align: center;
     font-size: 16px;
     font-family: 'Jost', sans-serif;
-    display: inline-flex;
-    flex-direction: column;
 }
 
+main {
+  display: inline-flex;
+  flex-direction: column;
+}
 
 h1 {
   font-size: 1.8rem;
@@ -48,6 +50,7 @@ span.nobr {
 
 header {
   display: flex;
+  padding: 0.2rem 0;
   background-color: rgba(36, 43, 97, 1);
   background-image: linear-gradient(90deg, rgb(44,55,64) 0%, rgb(0,29,51) 100%);
   justify-content: space-between;
@@ -56,7 +59,7 @@ header {
 }
 
 header div {
-  height: 7rem;
+  height: 6.5rem;
   width: 20rem;
   padding: 1.5rem;
   margin-left: 2.5rem;
@@ -94,7 +97,11 @@ header li a:hover {
   color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1006px) {
+  header ul {
+    justify-content: end;
+  }
+
   header li {
     font-size: 1.9vw;
   }
@@ -102,7 +109,8 @@ header li a:hover {
 
 @media only screen and (max-width: 860px) {
     header ul {
-      justify-content: flex-end;
+      flex-direction:column;
+      justify-content: space-around;
     }
     header li {
       font-size: 1.1rem;
@@ -112,12 +120,13 @@ header li a:hover {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     header li {
       font-size: 1rem;
     }
     header div {
-      margin-left: 0.5rem;
+      margin-left: 0.4rem;
+      margin-right: 0.7rem;
     }
 }
 
