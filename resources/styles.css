@@ -125,10 +125,11 @@ header li a:hover {
       font-size: 1rem;
     }
     header div {
-      margin-left: 0.4rem;
-      margin-right: 0.7rem;
+      margin-left: 0rem;
+      margin-right: 1rem;
     }
 }
+
 
 /*banner*/
 .banner {
@@ -184,9 +185,46 @@ header li a:hover {
   border:#fa7373 2px solid;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1050px) {
+  .banner p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
   .banner {
     flex-direction: column;
+  }
+  .banner article {
+    flex-basis:auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .banner article {
+    margin: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+
+  .banner h2 {
+    font-size:1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .banner h3 {
+    font-size:1rem;
+    margin-bottom: 0.2rem;
+  }
+  .banner button {
+    height: 2rem;
+    margin-top: 0.7rem;
+    width: 10rem;
+    font-size: 1rem;
   }
 }
 
