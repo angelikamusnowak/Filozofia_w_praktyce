@@ -186,6 +186,11 @@ header li a:hover {
 }
 
 @media only screen and (max-width: 1050px) {
+
+  .banner {
+    margin-top: 1.5rem;
+  }
+
   .banner p {
     font-size: 1rem;
     line-height: 1.3rem;
@@ -199,6 +204,7 @@ header li a:hover {
 @media only screen and (max-width: 800px) {
   .banner {
     flex-direction: column;
+    margin-top: 1.2rem;
   }
   .banner article {
     flex-basis:auto;
@@ -211,6 +217,10 @@ header li a:hover {
 }
 
 @media only screen and (max-width: 650px) {
+
+  .banner {
+    margin-top: 1rem;
+  }
 
   .banner article {
     margin: 1rem 1rem;
