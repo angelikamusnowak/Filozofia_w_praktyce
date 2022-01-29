@@ -20,7 +20,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  color: #8a6eb0;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -115,6 +116,34 @@ header li a:hover {
     header div {
       margin-left: 0.5rem;
     }
+}
+
+/*banner*/
+.banner {
+  display:inline-flex;
+  justify-content: space-between;
+  background-color:rgb(255, 255, 255);
+  height: 30rem;;
+  margin-top: 2rem;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, rgb(0, 255, 255), rgb(138, 110, 176), rgb(255, 94, 94)) 90;
+}
+
+.banner .image {
+  flex-basis: 100rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/abortion.jpg);
+}
+
+.banner article {
+  text-align: left;
+  margin: 2rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /*glowing*/
