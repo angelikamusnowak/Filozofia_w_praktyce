@@ -190,7 +190,10 @@ header li a:hover {
     font-size: 1rem;
     line-height: 1.3rem;
   }
-
+      
+  .hidden {
+    display:none;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -204,6 +207,7 @@ header li a:hover {
   .banner .image {
     background-position: 50% 20%;;
   }
+
 }
 
 @media only screen and (max-width: 650px) {
