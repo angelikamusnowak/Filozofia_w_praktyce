@@ -128,6 +128,9 @@ header li a:hover {
       margin-left: 0rem;
       margin-right: 1rem;
     }
+    header {
+      border-bottom: 2px solid transparent;
+    }
 }
 
 
@@ -220,6 +223,8 @@ header li a:hover {
 
   .banner {
     margin-top: 1rem;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
   }
 
   .banner article {
@@ -270,5 +275,11 @@ header li a:hover {
     0 0 6rem 6rem #0ff;
 }
 
+@media only screen and (max-width: 650px) {
 
+  .background {
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+}
 
