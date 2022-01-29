@@ -147,7 +147,7 @@ header li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(images/abortion.jpg);
+  background-image: url(images/abortionmniejszy.jpg);
 }
 
 .banner article {
@@ -176,6 +176,12 @@ header li a:hover {
   background-color: #ed5353e3;
   color:rgb(255, 255, 255);
   letter-spacing: 0.05rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.banner button:hover {
+  background-color: #c03a3ae3;
+  border:#fa7373 2px solid;
 }
 
 @media only screen and (max-width: 900px) {
