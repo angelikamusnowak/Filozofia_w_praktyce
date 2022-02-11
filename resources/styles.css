@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0.6rem;
 }
@@ -54,16 +54,15 @@ header {
   background-color: rgba(36, 43, 97, 1);
   background-image: linear-gradient(90deg, rgb(44,55,64) 0%, rgb(0,29,51) 100%);
   justify-content: space-between;
-  border-bottom: 3px solid transparent;
-  border-image: linear-gradient(90deg, rgb(0, 255, 255), rgb(138, 110, 176), rgb(255, 94, 94)) 90;
+  /*border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, rgb(0, 255, 255), rgb(138, 110, 176), rgb(255, 94, 94)) 90;*/
 }
 
 header div {
-  height: 7rem;
+  height: 6rem;
   width: 20rem;
   padding: 1.5rem;
-  margin-left: 2.5rem;
-  margin-right: 1rem;
+  margin: 1rem 1rem 1rem 3.5rem;
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
@@ -97,6 +96,26 @@ header li a:hover {
   color: rgb(255, 255, 255);
 }
 
+@media only screen and (max-width: 1440px) {
+  header div {
+    margin-left: 1.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1205px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  header div {
+    margin-left: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 1006px) {
   header ul {
     justify-content: end;
@@ -115,9 +134,6 @@ header li a:hover {
     header li {
       font-size: 1.1rem;
     }
-    header div {
-      margin-left: 1.5rem;
-    }
     header {
       border-bottom: 2px solid transparent;
     }
@@ -128,7 +144,7 @@ header li a:hover {
       font-size: 1rem;
     }
     header div {
-      margin-left: 0rem;
+      margin-left: 1rem;
       margin-right: 1rem;
     }
 }
@@ -139,7 +155,7 @@ header li a:hover {
   display:inline-flex;
   justify-content: space-between;
   flex-basis: 30rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(90deg, rgb(0, 255, 255), rgb(138, 110, 176), rgb(255, 94, 94)) 90;
@@ -157,24 +173,25 @@ header li a:hover {
   flex-basis: 60vw;
   text-align: left;
   line-height: 1.8rem;
-  margin: 1.5rem 2rem;
+  margin: 2rem 2rem 2rem 3.5rem;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .banner p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
 }
 
 .banner button {
-  height: 3rem;
-  margin-top: 1rem;
-  width: 12rem;
-  font-size: 1.3rem;
+  height: 2rem;
+  margin-top: 0.8rem;
+  width: 9rem;
+  font-size: 1rem;
   font-weight: 500;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border:#ff8989 2px solid;
   background-color: #ed5353e3;
   color:rgb(255, 255, 255);
@@ -187,17 +204,22 @@ header li a:hover {
   border:#fa7373 2px solid;
 }
 
-@media only screen and (max-width: 1050px) {
-
-  .banner {
+@media only screen and (max-width: 1440px) {
+  .banner article{
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.8rem;
   }
+}
 
+@media only screen and (max-width: 1050px) {
   .banner p {
     font-size: 1rem;
     line-height: 1.3rem;
   }
-      
+  .banner article {
+    margin: 1rem 1.5rem;
+  }     
   .hidden {
     display:none;
   }
@@ -207,28 +229,24 @@ header li a:hover {
   header {
     border-bottom: 2px solid transparent;
   }
+
 }
 
 @media only screen and (max-width: 800px) {
   .banner {
-    flex-direction: column;
-    margin-top: 1.2rem;
+    flex-direction: column-reverse;
   }
   .banner article {
     flex-basis:auto;
   }
-
   .banner .image {
-    background-position: 50% 20%;;
+    background-position: 50% 15%;
+    flex-basis: 31vw;
   }
 
 }
 
 @media only screen and (max-width: 650px) {
-
-  .banner {
-    margin-top: 1rem;
-  }
 
   .banner article {
     margin: 1rem 1rem;
